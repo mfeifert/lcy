@@ -1,73 +1,73 @@
 package main
 
-type eventConstant struct {
+type eventFixed struct {
 	name  string
 	month int
 	day   int
 }
 
 var (
-	stNicholas = eventConstant{
+	stNicholas = eventFixed{
 		name:  "St. Nicholas",
 		month: 12,
 		day:   6,
 	}
 
-	christmas = eventConstant{
+	christmas = eventFixed{
 		name:  "Christmas Day",
 		month: 12,
 		day:   25,
 	}
 
-	newYearsDay = eventConstant{
+	newYearsDay = eventFixed{
 		name:  "New Year's Day",
 		month: 1,
 		day:   1,
 	}
 
-	epiphany = eventConstant{
+	epiphany = eventFixed{
 		name:  "Epiphany",
 		month: 1,
 		day:   6,
 	}
 
-	purification = eventConstant{
+	purification = eventFixed{
 		name:  "Purification",
 		month: 2,
 		day:   2,
 	}
 
-	annunciation = eventConstant{
+	annunciation = eventFixed{
 		name:  "Annunciation",
 		month: 3,
 		day:   25,
 	}
 
-	mayDay = eventConstant{
+	mayDay = eventFixed{
 		name:  "May Day",
 		month: 5,
 		day:   1,
 	}
 
-	stJohn = eventConstant{
+	stJohn = eventFixed{
 		name:  "St. John",
 		month: 6,
 		day:   24,
 	}
 
-	visitation = eventConstant{
+	visitation = eventFixed{
 		name:  "Visitation",
 		month: 7,
 		day:   2,
 	}
 
-	stMichael = eventConstant{
+	stMichael = eventFixed{
 		name:  "St. Michael",
 		month: 9,
 		day:   29,
 	}
 
-	reformation = eventConstant{
+	reformation = eventFixed{
 		name:  "Reformation",
 		month: 10,
 		day:   31,
