@@ -12,12 +12,13 @@ type eventFixed struct {
 	day   int
 }
 
-func (e eventFixed) makeEvent(year int) string {
+func (e eventFixed) getDate(year int) time.Time {
+	return time.Date(year, time.Month(e.month), e.day, 0, 0, 0, 0, time.Local)
+}
 
+func (e eventFixed) makeEvent() string {
 	format := "2006-01-02 Mon"
-	date := time.Date(year, time.Month(e.month), e.day, 0, 0, 0, 0, time.Local).Format(format)
-
-	return date + " " + e.name
+	return e.getDate(Year).Format(format) + " " + e.name
 }
 
 var (
