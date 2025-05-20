@@ -2,10 +2,22 @@ package main
 
 // Events that have a fixed date
 
+import (
+	"time"
+)
+
 type eventFixed struct {
 	name  string
 	month int
 	day   int
+}
+
+func (e eventFixed) makeEvent(year int) string {
+
+	format := "2006-01-02 Mon"
+	date := time.Date(year, time.Month(e.month), e.day, 0, 0, 0, 0, time.Local).Format(format)
+
+	return date + " " + e.name
 }
 
 var (
