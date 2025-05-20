@@ -1,5 +1,7 @@
 package main
 
+// Events that have a fixed date
+
 type eventFixed struct {
 	name  string
 	month int
